@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main>
-      <section>
-        <p>LUCID DEV</p>
+    <main className="hero">
+      <div className="hero-content">
+        <p className="eyebrow">LUCID DEV</p>
 
         <h1>
           Building ideas into
@@ -10,16 +10,21 @@ export default function Home() {
           digital experiences.
         </h1>
 
-        <p>
+        <p className="hero-description">
           Developer, builder and creator of software, automation tools and
           digital communities.
         </p>
 
-        <div>
-          <a href="/projects">View Projects</a>
-          <a href="/about">About Me</a>
+        <div className="hero-buttons">
+          <a href="/projects" className="button primary">
+            View Projects
+          </a>
+
+          <a href="/about" className="button secondary">
+            About Me
+          </a>
         </div>
-      </section>
+      </div>
     </main>
   );
 }
