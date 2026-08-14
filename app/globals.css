@@ -169,6 +169,23 @@ nav div a:hover {
   font-size: 14px;
   font-weight: 600;
 }
+.project-details {
+  display: grid;
+  gap: 40px;
+  margin-top: 70px;
+  max-width: 750px;
+}
+
+.project-details h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.project-details p {
+  color: #a1a1aa;
+  line-height: 1.8;
+}
+
 
 
 
