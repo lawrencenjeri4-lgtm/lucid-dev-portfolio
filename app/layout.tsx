@@ -3,9 +3,48 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Lucid Dev",
+  metadataBase: new URL("https://your-domain.com"),
+
+  title: {
+    default: "Lucid Dev — Developer & Builder",
+    template: "%s | Lucid Dev",
+  },
+
   description:
-    "Official Lucid Dev portfolio — projects, software, communities, and developer work.",
+    "Lucid Dev is the official portfolio of a developer building software, automation tools, digital products and communities.",
+
+  keywords: [
+    "Lucid Dev",
+    "Lucid Developer",
+    "software developer",
+    "web developer",
+    "automation",
+    "Kenya-Ultra",
+  ],
+
+  authors: [{ name: "Lucid Dev" }],
+  creator: "Lucid Dev",
+  publisher: "Lucid Dev",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    type: "website",
+    title: "Lucid Dev — Developer & Builder",
+    description:
+      "Official Lucid Dev portfolio, projects and online communities.",
+    siteName: "Lucid Dev",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Lucid Dev — Developer & Builder",
+    description:
+      "Official Lucid Dev portfolio, projects and online communities.",
+  },
 };
 
 export default function RootLayout({
@@ -21,4 +60,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+  }
