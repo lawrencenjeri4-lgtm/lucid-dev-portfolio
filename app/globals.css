@@ -259,7 +259,103 @@ nav div a:hover {
   color: #a1a1aa;
   line-height: 1.8;
 }
+.what-i-build {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 24px;
+}
 
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+.section-heading h2 {
+  margin: 15px 0 0;
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 1;
+  letter-spacing: -4px;
+}
+
+.section-heading h2 span {
+  color: #71717a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  position: relative;
+  padding: 32px;
+  min-height: 250px;
+  border: 1px solid rgba(139, 92, 246, 0.16);
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(99, 102, 241, 0.07),
+      rgba(168, 85, 247, 0.025)
+    );
+  box-shadow:
+    0 0 35px rgba(99, 102, 241, 0.04),
+    inset 0 0 30px rgba(168, 85, 247, 0.02);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  right: -80px;
+  background: rgba(139, 92, 246, 0.14);
+  filter: blur(60px);
+  border-radius: 50%;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow:
+    0 0 35px rgba(99, 102, 241, 0.10),
+    0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.service-number {
+  position: relative;
+  color: #71717a;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.service-card h3 {
+  position: relative;
+  margin: 45px 0 12px;
+  font-size: 25px;
+}
+
+.service-card p {
+  position: relative;
+  margin: 0;
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+@media (max-width: 750px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .what-i-build {
+    padding-top: 80px;
+  }
+}
 
 
 
