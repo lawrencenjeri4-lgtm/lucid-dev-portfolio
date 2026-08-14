@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://your-domain.com"),
@@ -55,9 +56,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
-      </body>
+  <StructuredData />
+  <Navbar />
+  {children}
+</body>
     </html>
   );
   }
