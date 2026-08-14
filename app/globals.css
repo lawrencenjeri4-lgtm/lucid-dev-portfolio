@@ -669,3 +669,14 @@ footer {
     margin-top: 60px;
   }
     }
+.channel-card a {
+  display: inline-block;
+  margin-top: 25px;
+  color: #c4b5fd;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.channel-card a:hover {
+  color: #ffffff;
+}
