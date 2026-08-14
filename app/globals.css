@@ -57,16 +57,33 @@ nav div a:hover {
   padding: 80px 24px;
   overflow: hidden;
   text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(99, 102, 241, 0.06),
+      transparent 45%
+    );
 }
 
 .hero-glow {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.06);
-  filter: blur(120px);
+  width: 700px;
+  height: 700px;
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(99, 102, 241, 0.20),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 70% 60%,
+      rgba(168, 85, 247, 0.16),
+      transparent 50%
+    );
+  filter: blur(80px);
   border-radius: 50%;
   pointer-events: none;
+  opacity: 0.9;
 }
 
 .hero-content {
