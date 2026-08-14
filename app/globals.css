@@ -156,19 +156,38 @@ nav div a:hover {
 }
 
 .button.primary {
-  background: #ffffff;
+  position: relative;
+  background: linear-gradient(135deg, #ffffff, #e4e4e7);
   color: #050505;
+  box-shadow:
+    0 0 25px rgba(99, 102, 241, 0.18),
+    0 0 60px rgba(168, 85, 247, 0.10);
+}
+
+.button.primary:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 30px rgba(99, 102, 241, 0.30),
+    0 0 80px rgba(168, 85, 247, 0.18);
 }
 
 .button.secondary {
-  border: 1px solid #27272a;
-  background: rgba(255, 255, 255, 0.02);
+  position: relative;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(139, 92, 246, 0.04);
   color: #ffffff;
+  box-shadow:
+    0 0 20px rgba(99, 102, 241, 0.08),
+    inset 0 0 20px rgba(168, 85, 247, 0.03);
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
+.button.secondary:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139, 92, 246, 0.65);
+  background: rgba(139, 92, 246, 0.08);
+  box-shadow:
+    0 0 25px rgba(99, 102, 241, 0.25),
+    0 0 55px rgba(168, 85, 247, 0.12);
 }
 .page {
   max-width: 1100px;
