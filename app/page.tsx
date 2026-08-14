@@ -1,23 +1,30 @@
 export default function Home() {
   return (
     <main className="hero">
+      <div className="hero-glow" />
+
       <div className="hero-content">
+        <div className="status">
+          <span />
+          Building something new
+        </div>
+
         <p className="eyebrow">LUCID DEV</p>
 
         <h1>
-          Building ideas into
+          I build things
           <br />
-          digital experiences.
+          <span>that make an impact.</span>
         </h1>
 
         <p className="hero-description">
-          Developer, builder and creator of software, automation tools and
-          digital communities.
+          Developer and builder creating software, automation tools,
+          communities and digital experiences.
         </p>
 
         <div className="hero-buttons">
           <a href="/projects" className="button primary">
-            View Projects
+            Explore My Work →
           </a>
 
           <a href="/about" className="button secondary">
